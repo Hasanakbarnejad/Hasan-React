@@ -1,0 +1,78 @@
+/* General CSS styles */
+body{
+    margin: 0px;
+    font-family: fantasy, arial;
+}
+p{
+    color: #333;
+}
+header{
+    background-color: #267a38;
+    padding: 15px;
+}
+nav{
+    display: flex;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+nav ul li{
+    display: inline;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+nav ul li a{
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #33333347;
+}
+nav ul li a.active{
+    background-color: #42be28;
+}
+main{
+    padding: 100px 15px;
+    margin: 0px auto;
+    text-align: center;
+}
+main ul{
+    padding: 0px;
+}
+main ul li{
+    margin-bottom: 10px;
+    color: #666;
+}
+/* Project Styles */
+.projects img{
+    max-width: 100%;
+    width: 200px;
+    margin: 10px;
+}
+.project-row{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.project-row h3{
+    font-size: 20px;
+    padding-top: 70px;
+}
+/* Mobile first */
+@media (min-width: 600px) {
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul li a{
+        padding: 8px 20px;
+    }
+}
